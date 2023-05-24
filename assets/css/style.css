@@ -1,9 +1,44 @@
+/* Variáveis globais */
+:root {
+    --cor-de-fundo: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    --cor-fonte-menu: #FFF2E7;
+}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Righteous&family=Sarala:wght@400;700&display=swap');
 /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
-/* Variáveis globais */
 
 /* Estilos globais */
+body {
+    font-size: 100%;
+    background: var(--cor-de-fundo);  
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 72px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: var(--cor-fonte-menu);
+    font-weight: 400;
+    font-size: 18px;
+}
